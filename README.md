@@ -73,19 +73,30 @@ VITE_API_URL=http://localhost:5000 # For development
 
 <table>
    <tr>
-    <td colspan="3"><img src="/screenshot/Screenshot (268).png" alt="Credit Minder App Screenshot" width="800" height="400"></td>
+    <td colspan="3"><img src="/screenshot/Screenshot (268).png" alt="Admin" width="800" height="400"></td>
+  </tr>
+   <tr>
+    <td colspan="3"><img src="/screenshot/Screenshot (276).png" alt="Admin" width="800" height="400"></td>
+  </tr>
+   <tr>
+    <td colspan="3"><img src="/screenshot/Screenshot (269).png" alt="Landing" width="800" height="400"></td>
+  </tr>
+   <tr>
+    <td colspan="3"><img src="/screenshot/Screenshot (270).png" alt="Admin" width="800" height="400"></td>
+  </tr>
+   <tr>
+    <td colspan="3"><img src="/screenshot/Screenshot (271).png" alt="Admin" width="800" height="400"></td>
+  </tr>
+   <tr>
+    <td colspan="3"><img src="/screenshot/Screenshot (272).png" alt="Admin" width="800" height="400"></td>
   </tr>
   <tr>
-    <td><img src="/preview/m.jpg" alt="Credit Minder App Screenshot" width="300" height="600"></td>
-    <td><img src="/preview/mobile_preview_2.jpg" alt="Credit Minder App Screenshot" width="300" height="600"></td>
-    <td><img src="/preview/mobile_preview_3.jpg" alt="Credit Minder App Screenshot" width="300" height="600"></td>
+    <td><img src="/screenshot/Screenshot (273).png alt="User" width="300" height="600"></td>
+     <td><img src="/screenshot/Screenshot (274).png alt="User" width="300" height="600"></td>
+     <td><img src="/screenshot/Screenshot (275).png alt="User" width="300" height="600"></td>
   </tr>
     
-  <tr>
-    <td colspan="3"><img src="/preview/web_preview_2.png" alt="Credit Minder App Screenshot" width="800" height="400"></td>
-  </tr>
-  <tr>
-
+ 
 </table>
 
 ## License
