@@ -17,7 +17,9 @@ const LandingPage: React.FC = () => {
             Product Review Platform
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Discover, review and manage products with our comprehensive platform
+            Discover, review and manage products with our comprehensive platform 
+            <br />
+            <b>Please note that the login or registration process might occasionally take up to 50 seconds. This delay is due to the backend being hosted on a free service, which may impact performance.</b>
           </p>
         </motion.div>
 
