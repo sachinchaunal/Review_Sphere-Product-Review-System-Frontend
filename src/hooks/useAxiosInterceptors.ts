@@ -10,7 +10,29 @@ const useAxiosInterceptors = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const interceptor = axios.interceptors.response.use(
+    // Request interceptor to attach tokens from localStorage
+    const requestInterceptor = axios.interceptors.request.use(
+      (config) => {
+        // Check if we're making a request to an admin endpoint
+        if (config.url?.includes('/admin')) {
+          const adminToken = localStorage.getItem('adminToken');
+          if (adminToken) {
+            config.headers.Authorization = `Bearer ${adminToken}`;
+          }
+        } else {
+          // For regular user endpoints
+          const token = localStorage.getItem('token');
+          if (token) {
+            config.headers.Authorization = `Bearer ${token}`;
+          }
+        }
+        return config;
+      },
+      (error) => Promise.reject(error)
+    );
+
+    // Response interceptor to handle 401 errors
+    const responseInterceptor = axios.interceptors.response.use(
       (response) => response,
       (error) => {
         if (error.response?.status === 401) {
@@ -27,7 +49,8 @@ const useAxiosInterceptors = () => {
     );
 
     return () => {
-      axios.interceptors.response.eject(interceptor);
+      axios.interceptors.request.eject(requestInterceptor);
+      axios.interceptors.response.eject(responseInterceptor);
     };
   }, [userAuth, adminAuth, navigate]);
 };
