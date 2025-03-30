@@ -90,10 +90,17 @@ VITE_API_URL=http://localhost:5000 # For development
    <tr>
     <td colspan="3"><img src="/screenshot/Screenshot (272).png" alt="Admin" width="800" height="400"></td>
   </tr>
-  <tr>
-    <td><img src="/screenshot/Screenshot (273).png alt="User" width="300" height="600"></td>
-     <td><img src="/screenshot/Screenshot (274).png alt="User" width="300" height="600"></td>
-     <td><img src="/screenshot/Screenshot (275).png alt="User" width="300" height="600"></td>
+  </tr>
+   <tr>
+    <td colspan="3"><img src="/screenshot/Screenshot (273).png" alt="Admin" width="800" height="400"></td>
+  </tr>
+  </tr>
+   <tr>
+    <td colspan="3"><img src="/screenshot/Screenshot (274).png" alt="Admin" width="800" height="400"></td>
+  </tr>
+  </tr>
+   <tr>
+    <td colspan="3"><img src="/screenshot/Screenshot (275).png" alt="Admin" width="800" height="400"></td>
   </tr>
     
  
