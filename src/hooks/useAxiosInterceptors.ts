@@ -13,8 +13,8 @@ const useAxiosInterceptors = () => {
     // Request interceptor to attach tokens from localStorage
     const requestInterceptor = axios.interceptors.request.use(
       (config) => {
-        // Check if we're making a request to an admin endpoint
-        if (config.url?.includes('/admin')) {
+        // Check if we're making a request to an admin endpoint or product scraping endpoint
+        if (config.url?.includes('/admin') || config.url?.includes('/products/scrape')) {
           const adminToken = localStorage.getItem('adminToken');
           if (adminToken) {
             config.headers.Authorization = `Bearer ${adminToken}`;
@@ -36,12 +36,12 @@ const useAxiosInterceptors = () => {
       (response) => response,
       (error) => {
         if (error.response?.status === 401) {
-          if (error.response.data.type === "user") {
-            userAuth.logout();
-            navigate("/signin");
-          } else {
+          if (error.response.data.type === "admin") {
             adminAuth.adminLogout();
             navigate("/admin/signin");
+          } else {
+            userAuth.logout();
+            navigate("/signin");
           }
         }
         return Promise.reject(error);
