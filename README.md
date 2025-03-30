@@ -69,6 +69,25 @@ VITE_API_URL=http://localhost:5000 # For development
   - `stores/`: State management (using Zustand)
   - `utils/`: Utility functions
 
+## Project Preview
+
+<table>
+   <tr>
+    <td colspan="3"><img src="/screenshot/Screenshot (268).png" alt="Credit Minder App Screenshot" width="800" height="400"></td>
+  </tr>
+  <tr>
+    <td><img src="/preview/m.jpg" alt="Credit Minder App Screenshot" width="300" height="600"></td>
+    <td><img src="/preview/mobile_preview_2.jpg" alt="Credit Minder App Screenshot" width="300" height="600"></td>
+    <td><img src="/preview/mobile_preview_3.jpg" alt="Credit Minder App Screenshot" width="300" height="600"></td>
+  </tr>
+    
+  <tr>
+    <td colspan="3"><img src="/preview/web_preview_2.png" alt="Credit Minder App Screenshot" width="800" height="400"></td>
+  </tr>
+  <tr>
+
+</table>
+
 ## License
 
 This project is licensed under the ISC License.
